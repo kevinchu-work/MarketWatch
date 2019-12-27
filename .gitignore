@@ -350,7 +350,3 @@ MigrationBackup/
 .ionide/
 
 
-
-# Ignore CSS as it generated from SCSS
-*.CSS
-*.css.map
