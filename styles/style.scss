@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700|Roboto:400,500&display=swap');
+// font-family: 'Merriweather Sans', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-size: 10px;  // easier for developer
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+
+  background-color: #4a4a4a;
+  color: #eee;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+h1  { font-size: 2rem; }
+h2  { font-size: 1.8rem; }
+h3  { font-size: 1.6rem; }
+h4  { font-size: 1.4rem; }
+
+
+body {
+  $body_max_width: 1280px;
+  $default_padding: 10px;
+
+  max-width: $body_max_width;
+  width: 100%;
+  min-height: 100%;;
+  margin: 0 auto;
+
+  main {
+    $aside_max_width: 400px;
+
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - #{$default_padding * 2};
+
+    padding: 0 #{$default_padding};
+
+    article {
+      max-width: ($body_max_width - $aside_max_width);
+      width: calc(65% - #{$default_padding * 2});
+
+      padding: 0 10px;
+    }
+    
+    aside {
+      max-width: $aside_max_width;
+      width: 35%;
+    }
+  }
+
+  section + section {
+    margin-top: 15px;
+  }
+
+}
+
+aside.tickerWidget {
+  width: 100%;
+  
+}

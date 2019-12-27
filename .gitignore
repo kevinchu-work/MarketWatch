@@ -348,3 +348,9 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+
+
+# Ignore CSS as it generated from SCSS
+*.CSS
+*.css.map
