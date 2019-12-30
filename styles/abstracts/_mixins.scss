@@ -1,0 +1,53 @@
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+      @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+      @content;
+  }
+}
+
+
+@mixin dimen($width, $height: $width) {
+  width  : $width; 
+  height : $height;
+}
+
+@mixin margin-x($left: 0, $right: $left) {
+  margin-left  : $left;
+  margin-right : $right;
+}
+
+@mixin margin-y($top: 0, $down: $top) {
+  margin-top    : $top;
+  margin-bottom : $down;
+}
+
+@mixin padding-x($left: 0, $right: $left) {
+  padding-left  : $left;
+  padding-right : $right;
+}
+
+@mixin padding-y($left: 0, $right: $left) {
+  padding-top    : $left;
+  padding-bottom : $right;
+}
