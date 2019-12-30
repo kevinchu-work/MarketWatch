@@ -1,0 +1,286 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shortcut of Market Watch</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Stock Market monitor developed by and developed for individual investor">
+  <meta name="keywords" content="stock market, investment market, market watch, market monitor, personal investment widget">
+  <meta name="author" content="Kevin Chu">
+
+  <link rel="stylesheet" href="styles/style.min.css">
+</head>
+<body>
+
+  <header></header>
+  <nav></nav>
+  
+  <aside class="tickerWidget">
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div> -->
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+      {
+      "symbols": [
+        {
+          "proName": "OANDA:SPX500USD",
+          "title": "S&P 500"
+        },
+        {
+          "proName": "OANDA:NAS100USD",
+          "title": "Nasdaq 100"
+        },
+        {
+          "proName": "FX_IDC:EURUSD",
+          "title": "EUR/USD"
+        },
+        {
+          "description": "CAD/HKD",
+          "proName": "FX_IDC:CADHKD"
+        },
+        {
+          "description": "Nikkei 255",
+          "proName": "INDEX:NKY"
+        }
+      ],
+      "isTransparent": false,
+      "displayMode": "adaptive",
+      "locale": "en"
+    }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+  </aside>
+  <aside class="tickerWidget" style="display: none;">
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Quotes</span></a> by TradingView</div> -->
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+      {
+        "symbols": [
+          {
+            "proName": "OANDA:SPX500USD",
+            "title": "S&P 500"
+          },
+          {
+            "proName": "OANDA:NAS100USD",
+            "title": "Nasdaq 100"
+          },
+          {
+            "proName": "FX_IDC:EURUSD",
+            "title": "EUR/USD"
+          },
+          {
+            "description": "DAX",
+            "proName": "XETR:DAX"
+          }
+        ],
+        "isTransparent": false,
+        "locale": "en"
+      }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+  </aside>
+
+  <main>
+    <article>
+      <h1>Market Watch</h1>
+      <section>
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Market Data</span></a> by TradingView</div> -->
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+          {
+          "width": "100%",
+          "height": "100%",
+          "symbolsGroups": [
+            {
+              "name": "Indices",
+              "originalName": "Indices",
+              "symbols": [
+                {
+                  "name": "OANDA:SPX500USD",
+                  "displayName": "S&P 500"
+                },
+                {
+                  "name": "OANDA:NAS100USD",
+                  "displayName": "Nasdaq 100"
+                },
+                {
+                  "name": "FOREXCOM:DJI",
+                  "displayName": "Dow 30"
+                },
+                {
+                  "name": "INDEX:NKY",
+                  "displayName": "Nikkei 225"
+                },
+                {
+                  "name": "INDEX:DEU30",
+                  "displayName": "DAX Index"
+                },
+                {
+                  "name": "OANDA:UK100GBP",
+                  "displayName": "FTSE 100"
+                },
+                {
+                  "name": "INDEX:HSI",
+                  "displayName": "HSI"
+                },
+                {
+                  "name": "RUSSELL:RUT",
+                  "displayName": "Russell 2K"
+                }
+              ]
+            },
+            {
+              "name": "Commodities",
+              "originalName": "Commodities",
+              "symbols": [
+                {
+                  "name": "CME_MINI:ES1!",
+                  "displayName": "E-Mini S&P"
+                },
+                {
+                  "name": "CME:6E1!",
+                  "displayName": "Euro"
+                },
+                {
+                  "name": "COMEX:GC1!",
+                  "displayName": "Gold"
+                },
+                {
+                  "name": "NYMEX:CL1!",
+                  "displayName": "Crude Oil"
+                },
+                {
+                  "name": "NYMEX:NG1!",
+                  "displayName": "Natural Gas"
+                },
+                {
+                  "name": "CBOT:ZC1!",
+                  "displayName": "Corn"
+                }
+              ]
+            },
+            {
+              "name": "Bonds",
+              "originalName": "Bonds",
+              "symbols": [
+                {
+                  "name": "CME:GE1!",
+                  "displayName": "Eurodollar"
+                },
+                {
+                  "name": "CBOT:ZB1!",
+                  "displayName": "T-Bond"
+                },
+                {
+                  "name": "CBOT:UB1!",
+                  "displayName": "Ultra T-Bond"
+                },
+                {
+                  "name": "EUREX:FGBL1!",
+                  "displayName": "Euro Bund"
+                },
+                {
+                  "name": "EUREX:FBTP1!",
+                  "displayName": "Euro BTP"
+                },
+                {
+                  "name": "EUREX:FGBM1!",
+                  "displayName": "Euro BOBL"
+                }
+              ]
+            },
+            {
+              "name": "Forex",
+              "originalName": "Forex",
+              "symbols": [
+                {
+                  "name": "FX:EURUSD"
+                },
+                {
+                  "name": "FX:GBPUSD"
+                },
+                {
+                  "name": "FX:USDJPY"
+                },
+                {
+                  "name": "FX:USDCHF"
+                },
+                {
+                  "name": "FX:AUDUSD"
+                },
+                {
+                  "name": "FX:USDCAD"
+                }
+              ]
+            }
+          ],
+          "locale": "en"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END -->
+      </section>
+
+      <section>
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/currencies/forex-cross-rates/" rel="noopener" target="_blank"><span class="blue-text">Forex Rates</span></a> by TradingView</div> -->
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+          {
+          "width": "100%",
+          "height": 300,
+          "currencies": [
+            "EUR",
+            "USD",
+            "JPY",
+            "GBP",
+            "AUD",
+            "CNY",
+            "HKD"
+          ],
+          "locale": "en"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END -->        
+      </section>
+    </article>
+
+    <aside>
+      <h1>Economic Calendar</h1>
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <!-- <div class="tradingview-widget-copyright">
+          <a href="https://www.tradingview.com/markets/currencies/economic-calendar/" rel="noopener" target="_blank">
+            <span class="blue-text">Economic Calendar</span>
+          </a> 
+          by TradingView
+        </div> -->
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+        {
+          "isTransparent": false,
+          "width": "100%",
+          "height": 600,
+          "locale": "en",
+          "importanceFilter": "0,1",
+          "currencyFilter": "USD,AUD,CNY,DEM,FRF,CAD,EUR,JPY,GBP,HKD"
+        }
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </aside>
+  </main>
+
+  <footer></footer>
+  
+</body>
+</html>
